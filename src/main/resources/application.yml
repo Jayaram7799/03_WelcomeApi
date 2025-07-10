@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Welcome-Api
+
+  boot:
+    admin:
+      client:
+        url: ${ADMIN_SERVER_ADDRESS:http://localhost:1111/}
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka/}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

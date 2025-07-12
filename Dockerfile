@@ -1,8 +1,8 @@
 FROM openjdk:17
 
-COPY target/WelcomeApi.jar /use/app
+WORKDIR /user/welcomeapp
 
-WORKDIR /use/app
+COPY target/WelcomeApi.jar /user/welcomeapp
 
 EXPOSE 8080
 
